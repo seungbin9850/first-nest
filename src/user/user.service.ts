@@ -9,7 +9,6 @@ export class UserService {
     try {
       await User.create(req);
     } catch (e) {
-      console.log(e.message);
       throw AlreadyExistsUser;
     }
   }
