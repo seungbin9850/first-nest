@@ -8,7 +8,6 @@ import { User } from '../entities';
 export class UserService {
   async createUser(req: CreateUserDTO) {
     try {
-      //const password: string = await passwordEncoding(req.password);
       await User.create(req);
     } catch (e) {
       console.log(e.message);
