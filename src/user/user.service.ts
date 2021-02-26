@@ -1,7 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { CreateUserDTO } from 'src/dto';
 import { AlreadyExistsUser } from 'src/exception';
-import { passwordEncoding } from 'src/utils/crypto';
 import { User } from '../entities';
 
 @Injectable()
